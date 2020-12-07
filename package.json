@@ -4,7 +4,8 @@
   "description": "A lightweight vue loader for browser",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c rollup.config.js"
+    "build": "rollup -c rollup.config.js",
+    "serve": "live-dev-server"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/thiled/vue-scooter#readme",
   "devDependencies": {
+    "live-dev-server": "^0.7.2",
     "rollup": "^2.34.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0"
