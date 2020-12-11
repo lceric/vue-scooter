@@ -13,5 +13,15 @@ module.exports = {
       default:
         window.location.reload()
     }
-  }
+  },
+  proxy: {
+    '/api': {
+      target: 'http://xhx.xstable.kaikela.cn',
+      ws: true,
+      changeOrigin: true,
+      pathRewrite: {
+        '^/api': '',
+      },
+    },
+  },
 }

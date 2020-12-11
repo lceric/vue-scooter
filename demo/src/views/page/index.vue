@@ -1,10 +1,12 @@
 <template>
   <div class="container">
-    <template>{{a}}</template>
+    <template>{{a}}f</template>
     <div class="nested">
       <Module></Module>
       <router-link to="/page2">page2</router-link>
     </div>
+    <button @click="testProxy">proxy data</button>
+    <pre>{{proxyData}}</pre>
   </div>
 </template>
 
@@ -16,11 +18,18 @@ export default {
   data() {
     return {
       a: 'page1',
+      proxyData: {}
     };
   },
   components: {
     Module,
   },
+  methods: {
+    async testProxy() {
+      let res = await axios.get('/api/Nosign/datavapi/teacher?token=XHX82NOT19NEED37LOGIN65&item_id=18&type=1')
+      this.proxyData = res.data
+    }
+  }
 };
 </script>
 

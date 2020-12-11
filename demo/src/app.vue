@@ -1,6 +1,6 @@
 <template>
   <div>
-    <template>{{a}}</template>
+    <template>{{a}}af</template>
     <router-view></router-view>
   </div>
 </template>

@@ -18,12 +18,13 @@
   },
   "homepage": "https://github.com/thiled/vue-scooter#readme",
   "devDependencies": {
-    "live-dev-server": "^0.7.2",
+    "live-dev-server": "^0.8.1",
     "rollup": "^2.34.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "stylis": "^4.0.6",
     "vue-hot-reload-api": "^2.3.4"
   }
